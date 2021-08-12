@@ -24,28 +24,28 @@ let g:airline#themes#atomic#palette = {}
 function! airline#themes#atomic#refresh()
 
 	let s:N1 = airline#themes#get_highlight2(['LineNr', 'bg'], ['ModeMsg', 'fg'], 'none')
-	let s:N2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['LineNr', 'fg'], 'none')
+	let s:N2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['SpecialKey', 'fg'], 'none')
 	let s:N3 = airline#themes#get_highlight2(['ModeMsg', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
 	let s:I1 = airline#themes#get_highlight2(['LineNr', 'bg'], ['Question', 'fg'], 'none')
-	let s:I2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['LineNr', 'fg'], 'none')
+	let s:I2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['SpecialKey', 'fg'], 'none')
 	let s:I3 = airline#themes#get_highlight2(['Question', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 
 	let s:R1 = airline#themes#get_highlight2(['LineNr', 'bg'], ['ErrorMsg', 'fg'], 'none')
-	let s:R2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['LineNr', 'fg'], 'none')
+	let s:R2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['SpecialKey', 'fg'], 'none')
 	let s:R3 = airline#themes#get_highlight2(['ErrorMsg', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
 	let s:V1 = airline#themes#get_highlight2(['LineNr', 'bg'], ['WarningMsg', 'fg'], 'none')
-	let s:V2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['LineNr', 'fg'], 'none')
+	let s:V2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['SpecialKey', 'fg'], 'none')
 	let s:V3 = airline#themes#get_highlight2(['WarningMsg', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 
-	let s:IA1 = airline#themes#get_highlight2(['LineNr', 'fg'], ['StatusLine', 'bg'], 'none')
-	let s:IA2 = airline#themes#get_highlight2(['LineNr', 'fg'], ['StatusLine', 'bg'], 'none')
-	let s:IA3 = airline#themes#get_highlight2(['LineNr', 'fg'], ['StatusLine', 'bg'], 'none')
+	let s:IA1 = airline#themes#get_highlight2(['SpecialKey', 'fg'], ['StatusLine', 'bg'], 'none')
+	let s:IA2 = airline#themes#get_highlight2(['SpecialKey', 'fg'], ['StatusLine', 'bg'], 'none')
+	let s:IA3 = airline#themes#get_highlight2(['SpecialKey', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 
 	" Accent color
