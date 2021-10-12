@@ -23,7 +23,7 @@ let g:airline#themes#atomic#palette = {}
 
 function! airline#themes#atomic#refresh()
 
-	let s:N1 = airline#themes#get_highlight2(['LineNr', 'bg'], ['ModeMsg', 'fg'], 'none')
+	let s:N1 = airline#themes#get_highlight2(['ErrorMsg', 'fg'], ['ModeMsg', 'fg'], 'none')
 	let s:N2 = airline#themes#get_highlight2(['LineNr', 'bg'], ['SpecialKey', 'fg'], 'none')
 	let s:N3 = airline#themes#get_highlight2(['ModeMsg', 'fg'], ['StatusLine', 'bg'], 'none')
 	let g:airline#themes#atomic#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
@@ -54,18 +54,18 @@ function! airline#themes#atomic#refresh()
 
 	" Mode map
 	let g:airline_mode_map = {
-		\ '__' : '--',
-		\ 'n'  : 'N',
-		\ 'i'  : 'I',
-		\ 'R'  : 'R',
-		\ 'c'  : 'C',
-		\ 'v'  : 'V',
-		\ 'V'  : 'V-L',
-		\ '' : 'V-B',
-		\ 's'  : 'S',
-		\ 'S'  : 'S-L',
-		\ '' : 'S-B',
-		\ 't'  : 'T',
+		\ '__' : '  ',
+		\ 'n'  : ' ',
+		\ 'i'  : ' ',
+		\ 'R'  : ' ',
+		\ 'c'  : ' ',
+		\ 'v'  : ' ',
+		\ 'V'  : '   ',
+		\ '' : '   ',
+		\ 's'  : ' ',
+		\ 'S'  : '   ',
+		\ '' : '   ',
+		\ 't'  : ' ',
 		\ }
 
 	" Settings
